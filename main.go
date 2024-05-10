@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"github.com/HildaM/mygo-docker/cmd"
+	"github.com/sirupsen/logrus"
+)
 
 func main() {
-	fmt.Println("hello MyGo")
+	logrus.SetLevel(logrus.DebugLevel)
+	cmd.Execute()
 }
